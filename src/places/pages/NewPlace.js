@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const NewPlace = () => {
-    return <h2>New Route Works!</h2>
+    const [counter, setCounter] = useState(0)
+    const handleClick = () => setCounter(counter + 1)
+    return (
+        <div>
+            <h1>{counter}</h1>
+            <button onClick={handleClick}>increment</button>
+        </div>
+    )
 }
 
 
