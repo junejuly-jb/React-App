@@ -19,7 +19,12 @@ const UsersList = props => {
                 image={user.image}
                 name={user.name}
                 placeCount={user.places}
-            />    
+            /> 
+            // <div>
+            //     <img src={user.image}/>
+            //     <li>{ user.id}</li>
+            //     <li>{user.places}</li>
+            // </div>
         ))}
         </ul>
     )
